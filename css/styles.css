@@ -208,3 +208,135 @@ body {
   color: #5079F2;
 }
 
+/* TIENDA */
+
+.tienda {
+  display: flex;
+  padding: 30px 100px;
+  justify-content: space-around;
+  background-color: #FFF;
+}
+
+.tienda .producto {
+  text-align: center;
+}
+
+.tienda .producto .nombre_producto {
+  font-size: 27px;
+  font-weight: bold;
+  font-style: italic;
+  color: #6878A6;
+}
+
+.tienda .producto .precio_producto{
+  font-size: 27px;
+  color: #5079F2;
+  display: flex; 
+}
+
+.tienda .producto .precio_producto .tachado {
+  text-decoration: line-through;
+  font-size: 27px;
+  margin-right: 10px;
+}
+
+.tienda .producto img{
+  width: 285px;
+}
+
+.tienda .producto li {
+  list-style: none;
+  display: flex;
+  margin-top: 8px;
+  
+}
+
+.tienda .btn button {
+  margin: 30px auto;
+  font-weight: 900;
+  color: #6878A6;
+  border-color: #6878A6;
+  padding: 2px 30px;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: scale(1.5);
+  font-style: italic;
+  font-size: 20px;
+  
+  
+}
+
+.tienda .btn button:hover {
+  background-color: #313468;
+  transform: scale(1.6);
+} 
+
+/* PHONE APP */
+
+.phone {
+  display: flex;
+  background-color: #6878A6;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+
+.phone p {
+  padding: 50px 1000px 100px 150px;
+}
+
+.phone .blanco {
+  background-color: #FFF;
+}
+
+.phone .descubrir {
+  display: flex;
+}
+
+.phone img {
+  
+  margin-right: 60px;
+  
+}
+
+.phone .btn button {
+  font-weight: 700;
+  color: #fff;
+  border-color: #fff;
+  padding: 9px 25px;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 100px 200px 100px 50px;
+  
+}
+
+.phone .btn button:hover {
+  background-color: #313468;
+  transform: scale(1.1);
+}
+
+/* MARCAS */
+
+.div_marcas {
+  padding: 30px 50px;
+  background-color: #FFF;
+   
+}
+
+.div_marcas p {
+  font-size: 30px;
+}
+
+.div_marcas span {
+  font-size: 30px;
+}
+
+.marcas {
+  height: 30px;
+  margin-left: -30px;
+  background-color: #E9EEF2;
+  
+}
