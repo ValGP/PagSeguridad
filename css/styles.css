@@ -18,6 +18,9 @@ body {
   background-color: #E9EEF2;
 }
 
+
+
+
 /* NavBar CSS */
 
 .header {
@@ -95,7 +98,8 @@ body {
 }
 
 .inicio img {
-  max-width: 65rem; 
+  width: 100%;
+  
 }
 
 /* OCTAGONO */
@@ -134,10 +138,8 @@ body {
 .valores {
   
   display: flex;
-  background-color: #E9EEF2;
   padding: 30px 350px;
   width: 100%;
-  background-color: #E9EEF2;
   justify-content: space-around;
 }
 
@@ -169,20 +171,26 @@ body {
 }
 
 .info_tienda {
-  margin-bottom: 5rem;
-  margin-top: 2rem;
+  padding: 5rem 10rem;
+}
+
+.fondo_tienda {
+  background-image: url("../img/fondo_blanco.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .info_tienda .btn button {
   margin: auto;
   margin-top: 8rem;
   display:flex;
-  font-weight: 700;
-  color: #5079F2;
-  border-color: #5079F2;
+  font-weight: 400;
+  color: white;
+  border: none;
   padding: 9px 25px;
-  background-color: transparent;
-  border-radius: 25px;
+  background-color: #6571A3;
+  border-radius: 40px;
   border-width: 0.2rem;
   cursor: pointer;
   transition: all 0.3s;
@@ -196,8 +204,9 @@ body {
 } 
 
 .info_tienda p {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 400;
+  
 }
 
 .oscuro {
@@ -206,6 +215,7 @@ body {
 
 .claro {
   color: #5079F2;
+  padding-bottom: 7rem;
 }
 
 /* TIENDA */
@@ -339,4 +349,82 @@ body {
   margin-left: -30px;
   background-color: #E9EEF2;
   
+}
+
+
+/* Formulario */
+
+.formulario {
+  display: flex;
+  padding: 50px auto;
+  
+}
+
+.formulario p {
+  color: white;
+  text-align: center;
+  margin: 10px auto;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+form {
+  margin: 50px auto;
+  transform: scale(1.2);
+}
+
+.formulario input {
+  display: block;
+  margin-bottom: 10px;
+  width: 450px;
+  padding: 4px 10px;
+  border: none;
+  outline: none;
+}
+
+
+.formulario .seleccionar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario select {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 220px;
+  padding: 4px 10px;
+  outline: none;
+  border: none;
+  cursor: inherit;
+  font-family: inherit;
+  appearance: none;
+  border-radius: 0%;
+}
+
+.formulario select::-ms-expand {
+  display: none;
+}
+
+
+.formulario textarea {
+  resize: none;
+  display: block;
+  width: 450px;
+  height: 100px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.formulario .btn {
+  background-color: #1A1E57;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 100px;
+  
+}
+
+.fondo_inicio {
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

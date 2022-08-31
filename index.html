@@ -33,10 +33,13 @@
 
     <!-- Imagen Inicio -->
     <section class="inicio">
-        <img src="img/seguridad3.webp" alt="Seguridad">
+        <img src="img/Carrusel1.jpg" alt="Seguridad">
     </section>
 
-    <!-- Valores-->
+
+    <div class="fondo_inicio">
+
+        <!-- Valores-->
         <section class="valores">
             <div class="valor">
                 <div id="octagono"></div>
@@ -51,22 +54,57 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias explicabo totam ullam magni eos nisi eum, neque porro distinctio non iste est dolorem</p>
             </div>
         </section>
+
+    <!--Formulario NombreApellido Email Telefono Texto Servicios-->
+
+    <div class="formulario">
+        <form action="">
+            <p>SOLICITAR PRESUPUESTO</p>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+            <input type="email" name="email" id="email" placeholder="Ingrese su Email">
+            <input type="text" name="telefono" id="telefono" placeholder="Ingrese su Telefono">
+            
+            <div class="seleccionar">
+                <select name="servicio" id="servicio">
+                    <option hidden selected>Seleccione un Servicio</option>
+                    <option value="esencial">Kit Esencial</option>
+                    <option value="pro">Kit Pro</option>
+                    <option value="personalizado">Kit Personalizado</option>
+                </select>
+                <select name="ciudad" id="ciudad">
+                    <option hidden selected>Seleccione una Ciudad</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="tucuman">Tucuman</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <input class="btn" type="submit" value="Enviar">
+        </form>
+    </div>
+
+    </div>
+    
     
     <!-- Boton de Tienda -->
-    <section class="info_tienda contenedor">
-        <div class="oscuro">
-            <p>¿CUANTO CUESTA <br> UN ROBO?</p>
-            
-        </div>
-        <div class="claro">
-            <p>NO LO DUDES, <br> ANTICIPATE.</p>
-        </div>
-        <div>
-            <a href="#" class="btn">
-                <button>Tienda</button>
-            </a>
-        </div>
-    </section>
+    <div class="fondo_tienda">
+        <section class="info_tienda contenedor">
+            <div class="oscuro">
+                <p>¿CUANTO CUESTA <br> UN ROBO?</p>
+                
+            </div>
+            <div class="claro">
+                <p>NO LO DUDES, <br> ANTICIPATE.</p>
+            </div>
+            <div>
+                <a href="#" class="btn">
+                    <button>Tienda</button>
+                </a>
+            </div>
+        </section>
+    </div>
+    
     
     <!-- Tienda -->
 
@@ -146,7 +184,10 @@
         <div class="marcas"></div>
     </div>
     
-    <!--Formulario NombreApellido Email Telefono Texto Servicios-->
+    
+    
+
+
 
 </body>
 </html>
