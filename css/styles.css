@@ -15,10 +15,15 @@
 }
 
 body {
-  background-color: #E9EEF2;
+  background-color: white;
 }
 
-
+hr {
+  width: 110px;
+  margin: 0.5rem auto;
+  border-top: 5px solid #5079F2;
+  border-radius: 10px;
+}
 
 
 /* NavBar CSS */
@@ -29,7 +34,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   height: 85px;
-  padding: 45px 10%;
+  padding: 55px 10%;
   /*position: fixed;*/
 }
 
@@ -40,13 +45,12 @@ body {
 
 .header .logo img {
   height: 70px;
-  width: auto;
-  border-radius: 50%;
+  transform: scale(0.6);
   transition: all 0.3s
 }
 
 .header .logo img:hover {
-  transform: scale(1.2);
+  transform: scale(0.8);
 }
 
 .header .nav-links {
@@ -94,238 +98,210 @@ body {
 
 .inicio {
   text-align: center;
-  background-color: #313468;
+  background-image: url(../img/camFiltro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1920px;
+  height: 640px;
 }
 
-.inicio img {
-  width: 100%;
-  
+.inicio p {
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: right;
+  padding: 15rem 25rem;
 }
 
-/* OCTAGONO */
+.inicio p span{
+  color: #5079F2;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: right;
+}
+ /* FONDO */
 
-#octagono {
-  width: 100px;
-  height: 100px;
-  background: #6571A3;
-  position: relative;
-}
-#octagono:before {
-  content: "";
-  width: 42px;
-  height: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-bottom: 29px solid #6571A3;
-  border-left: 29px solid #E9EEF2;
-  border-right: 29px solid #E9EEF2;
-}
-#octagono:after {
-  content: "";
-  width: 42px;
-  height: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-top: 29px solid #6571A3;
-  border-left: 29px solid #E9EEF2;
-  border-right: 29px solid #E9EEF2;
-}
+ .fondo {
+  background-image: url(../img/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: 2000px 1266px;
+ }
 
 /* Valores */
 
+.soluciones {
+  margin: 5rem auto;
+}
+
+.soluciones p{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1A1E57;
+  text-align: center;
+}
+
+.soluciones p span{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #5079F2;
+}
+
 .valores {
-  
   display: flex;
-  padding: 30px 350px;
-  width: 100%;
+  padding: 0px 320px;
   justify-content: space-around;
 }
 
-
 .valores .valor {
-  height: 500px;
-  width: 300px;
-  margin-top: 100px;
-  
+  height: 400px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.valores .valor img {
+  width: 130px;
+}
+
+.valores .valor .titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .valores .valor p {
   text-align: center;
-  margin: auto;
-  margin-top: 70px;
-  width: 175px;
+  margin-top: 1rem;
+  width: 250px;
+  line-height: 1.3rem;
 }
 
-.valores .valor div {
-  margin: auto;
-  transform: scale(1.5);
+/* Formulario */
+
+.formulario {
+  display: flex;
+  margin: 10rem;
+  padding: 50px auto;
+  transform: scale(1.1);
 }
 
-/* BOTON TIENDA */
-
-.info_tienda div a {
-  text-decoration: none;
-  font-size: 10rem;
-}
-
-.info_tienda {
-  padding: 5rem 10rem;
-}
-
-.fondo_tienda {
-  background-image: url("../img/fondo_blanco.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.info_tienda .btn button {
-  margin: auto;
-  margin-top: 8rem;
-  display:flex;
-  font-weight: 400;
+.formulario p {
   color: white;
-  border: none;
-  padding: 9px 25px;
-  background-color: #6571A3;
-  border-radius: 40px;
-  border-width: 0.2rem;
-  cursor: pointer;
-  transition: all 0.3s;
-  font-size: 2rem;
-  
-}
-
-.info_tienda .btn button:hover {
-  background-color: #313468;
-  transform: scale(1.1);
-} 
-
-.info_tienda p {
-  font-size: 2.5rem;
-  font-weight: 400;
-  
-}
-
-.oscuro {
-  color: #1A1E57;
-}
-
-.claro {
-  color: #5079F2;
-  padding-bottom: 7rem;
-}
-
-/* TIENDA */
-
-.tienda {
-  display: flex;
-  padding: 30px 100px;
-  justify-content: space-around;
-  background-color: #FFF;
-}
-
-.tienda .producto {
   text-align: center;
-}
-
-.tienda .producto .nombre_producto {
-  font-size: 27px;
-  font-weight: bold;
-  font-style: italic;
-  color: #6878A6;
-}
-
-.tienda .producto .precio_producto{
-  font-size: 27px;
-  color: #5079F2;
-  display: flex; 
-}
-
-.tienda .producto .precio_producto .tachado {
-  text-decoration: line-through;
-  font-size: 27px;
-  margin-right: 10px;
-}
-
-.tienda .producto img{
-  width: 285px;
-}
-
-.tienda .producto li {
-  list-style: none;
-  display: flex;
-  margin-top: 8px;
+  margin: 10px auto;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
   
 }
 
-.tienda .btn button {
-  margin: 30px auto;
-  font-weight: 900;
-  color: #6878A6;
-  border-color: #6878A6;
-  padding: 2px 30px;
-  background-color: transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s;
-  transform: scale(1.5);
-  font-style: italic;
-  font-size: 20px;
-  
-  
+form {
+  margin: 50px auto;
+  transform: scale(1.2);
 }
 
-.tienda .btn button:hover {
-  background-color: #313468;
-  transform: scale(1.6);
-} 
+.formulario input {
+  display: block;
+  margin-bottom: 10px;
+  width: 450px;
+  padding: 4px 10px;
+  border: none;
+  outline: none;
+}
 
-/* PHONE APP */
+.formulario .nom {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
-.phone {
-  display: flex;
+.formulario .seleccionar {
+  display: block;
+  justify-content: space-between;
+}
+
+
+.formulario select {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 220px;
+  padding: 4px 10px;
+  outline: none;
+  border: none;
+  cursor: inherit;
+  font-family: inherit;
+  appearance: none;
+  border-radius: 0%;
+}
+
+.formulario select:last-child {
+  margin-left: 6px;
+}
+
+.formulario select::-ms-expand {
+  display: none;
+}
+
+
+.formulario textarea {
+  resize: none;
+  display: block;
+  width: 450px;
+  height: 100px;
+  margin-bottom: 10px;
+  outline: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.formulario .btn {
   background-color: #6878A6;
-  justify-content: space-evenly;
-  padding-top: 50px;
-}
-
-.phone p {
-  padding: 50px 1000px 100px 150px;
-}
-
-.phone .blanco {
-  background-color: #FFF;
-}
-
-.phone .descubrir {
-  display: flex;
-}
-
-.phone img {
-  
-  margin-right: 60px;
-  
-}
-
-.phone .btn button {
-  font-weight: 700;
-  color: #fff;
-  border-color: #fff;
-  padding: 9px 25px;
-  background-color: transparent;
+  color: white;
   border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s;
-  margin: 100px 200px 100px 50px;
+  margin-bottom: 100px;
   
 }
 
-.phone .btn button:hover {
-  background-color: #313468;
-  transform: scale(1.1);
+
+/* Servicios */
+
+.servicios {
+  display: flex;
+  padding: 10px 300px;
+  justify-content: space-around;
+  margin-bottom: 7rem;
+}
+
+.servicio {
+  width: 210px;
+  height: 380px;
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #E8EAF1;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.servicio img{
+  width: 80px;
+  border-radius: 50%;
+  margin: 1.1rem auto;
+}
+
+.servicio .nom_servicio {
+  font-size: 1.5rem;
+  color: #1A1E57;
+  font-weight: 700;
+  margin: 1.1rem auto;
+}
+
+.servicio .desc_servicio {
+  margin: 1.1rem auto;
+}
+
+.servicio a {
+  text-decoration: none;
+  color: #1A1E57;
+  font-size: 1.2rem;
+  margin: 1.1rem auto;
 }
 
 /* MARCAS */
@@ -349,82 +325,4 @@ body {
   margin-left: -30px;
   background-color: #E9EEF2;
   
-}
-
-
-/* Formulario */
-
-.formulario {
-  display: flex;
-  padding: 50px auto;
-  
-}
-
-.formulario p {
-  color: white;
-  text-align: center;
-  margin: 10px auto;
-  letter-spacing: 2px;
-  font-size: 18px;
-}
-
-form {
-  margin: 50px auto;
-  transform: scale(1.2);
-}
-
-.formulario input {
-  display: block;
-  margin-bottom: 10px;
-  width: 450px;
-  padding: 4px 10px;
-  border: none;
-  outline: none;
-}
-
-
-.formulario .seleccionar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.formulario select {
-  margin: auto;
-  margin-bottom: 10px;
-  width: 220px;
-  padding: 4px 10px;
-  outline: none;
-  border: none;
-  cursor: inherit;
-  font-family: inherit;
-  appearance: none;
-  border-radius: 0%;
-}
-
-.formulario select::-ms-expand {
-  display: none;
-}
-
-
-.formulario textarea {
-  resize: none;
-  display: block;
-  width: 450px;
-  height: 100px;
-  margin-bottom: 10px;
-  outline: none;
-}
-
-.formulario .btn {
-  background-color: #1A1E57;
-  color: white;
-  border-radius: 15px;
-  margin-bottom: 100px;
-  
-}
-
-.fondo_inicio {
-  background-image: url("../img/fondo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
