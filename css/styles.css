@@ -34,7 +34,7 @@ hr {
   justify-content: flex-end;
   align-items: center;
   height: 85px;
-  padding: 55px 10%;
+  padding: 45px 10%;
   /*position: fixed;*/
 }
 
@@ -324,5 +324,128 @@ form {
   height: 30px;
   margin-left: -30px;
   background-color: #E9EEF2;
+  
+}
+
+/* PAG CONTACTO */
+
+.contacto {
+  background-image: url(../img/fondo_contacto.png);
+  background-size: 1921px 401px;
+  background-repeat: no-repeat;
+}
+
+.contacto .titulo_contacto p{
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.contacto .info_contacto {
+  background-color: #E8EAF1;
+  display: flex;
+  width: 1260px;
+  height: 679px;
+  border-radius: 20px;
+  margin: 187px 329px;
+  justify-content: space-around;
+}
+
+.contacto .info_contacto .mapa{
+  width: 352px;
+  height: 374px;
+}
+
+
+.contacto .info {
+  line-height: 1.8rem;
+  margin: auto;
+}
+
+.contacto .info p {
+  font-size: 0.9rem;
+}
+
+.info_contacto .form {
+
+}
+
+
+.formulario_contacto {
+  display: flex;
+  margin: 6rem;
+  padding: 50px auto;
+  transform: scale(1.1);
+}
+
+.formulario_contacto p {
+  
+
+  
+}
+
+form {
+  margin: 50px auto;
+  transform: scale(1.2);
+}
+
+.formulario_contacto input {
+  display: block;
+  margin-bottom: 10px;
+  width: 450px;
+  padding: 4px 10px;
+  border: none;
+  outline: none;
+}
+
+.formulario_contacto .nom {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.formulario_contacto .seleccionar {
+  display: block;
+  justify-content: space-between;
+}
+
+
+.formulario_contacto select {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 220px;
+  padding: 4px 10px;
+  outline: none;
+  border: none;
+  cursor: inherit;
+  font-family: inherit;
+  appearance: none;
+  border-radius: 0%;
+}
+
+.formulario_contacto select:last-child {
+  margin-left: 6px;
+}
+
+.formulario_contacto select::-ms-expand {
+  display: none;
+}
+
+
+.formulario_contacto textarea {
+  resize: none;
+  display: block;
+  width: 450px;
+  height: 100px;
+  margin-bottom: 10px;
+  outline: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.formulario_contacto .btn {
+  background-color: #5079F2;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 100px;
   
 }
