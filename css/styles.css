@@ -335,10 +335,14 @@ form {
   background-repeat: no-repeat;
 }
 
+.contacto .titulo_contacto {
+  padding: 4rem;
+}
+
 .contacto .titulo_contacto p{
   text-align: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .contacto .info_contacto {
@@ -347,8 +351,8 @@ form {
   width: 1260px;
   height: 679px;
   border-radius: 20px;
-  margin: 187px 329px;
-  justify-content: space-around;
+  margin: auto 329px;
+  justify-content: space-between;
 }
 
 .contacto .info_contacto .mapa{
@@ -359,28 +363,24 @@ form {
 
 .contacto .info {
   line-height: 1.8rem;
-  margin: auto;
+  margin: auto 6rem;
 }
 
-.contacto .info p {
+.contacto .info .inf {
   font-size: 0.9rem;
-}
-
-.info_contacto .form {
-
 }
 
 
 .formulario_contacto {
-  display: flex;
-  margin: 6rem;
-  padding: 50px auto;
+  display: block;
+  margin: 6rem auto;
+  padding: 50px 150px;
   transform: scale(1.1);
+  
 }
 
-.formulario_contacto p {
-  
-
+.formulario_contacto .consulta {
+  text-align: center;  
   
 }
 
@@ -440,6 +440,7 @@ form {
   outline: none;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  border: none;
 }
 
 .formulario_contacto .btn {
@@ -447,5 +448,157 @@ form {
   color: white;
   border-radius: 10px;
   margin-bottom: 100px;
+  width: 50%;
   
+}
+
+/* EQUIPOS */
+
+.gray {
+  background-color: #E8EAF1;
+  padding: 1%;
+}
+
+.equipos {
+  display: flex;
+  padding: 10px 300px;
+  justify-content: space-around;
+  margin-bottom: 7rem;
+}
+
+.equipo {
+  width: 255px;
+  height: 400px;
+  text-align: center;
+  padding: 1.2rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.equipo img{
+  width: 80%;
+  margin: 1.1rem auto;
+}
+
+.equipo .titulo {
+  color: #1A1E57;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.equipo a {
+  text-decoration: none;
+  color: #1A1E57;
+  font-size: 1.2rem;
+  margin: 1.1rem auto;
+}
+
+.nos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nosotros {
+  width: 475px;
+  height: 475px;
+  background-color: #1A1E57;
+  color: white;
+  border-radius: 10%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  box-shadow: rgba(232, 234, 241, 1) 70px 100px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.nosotros_titulo {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 80px;
+}
+
+.nosotros_info {
+  width: 315px;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.descubri {
+  margin: 25rem 0;
+  margin-left: -15rem;
+  text-align: center;
+}
+
+.descubri p {
+  color: #1A1E57;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.descubri p span {
+  color: #5079F2;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.descubri a {
+  text-decoration: none;
+  color: #1A1E57;
+  font-size: 1.2rem;
+}
+
+.telefono {
+  width: 1065px;
+  height: 745px;
+  background-color: #E8EAF1;
+  border-radius: 10%;
+  margin: 5rem auto;
+}
+
+.cont_telefono {
+  display: flex;
+}
+
+.tel_titulo {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding-top: 5rem;
+  color: #1A1E57;
+}
+
+.tel_titulo span{
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding-top: 5rem;
+  color: #5079F2;
+}
+
+.caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 500px;
+  height: 500px;
+  margin: 0 7rem;
+}
+
+.caracteristica {
+  margin: auto 2rem;
+}
+
+.caracteristica .icono {
+  width: 150px;
+}
+
+.caracteristica p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.img_telefono img {
+  width: 1000px;
+  margin: -6rem -15rem;
 }
